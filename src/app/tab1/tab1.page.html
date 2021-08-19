@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content 
+[fullscreen]="true"
+>
+
+<div style="padding: 10px;">
+  
+  <ion-item>
+    <ion-label position="stacked">Stacked Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Stacked Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Stacked Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Stacked Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-button 
+  expand="block"
+  (click)="sendData()"
+  [disabled]="!this.enableButton">
+    Send
+    <ion-spinner *ngIf="showLoading"
+     name="lines-small"></ion-spinner>
+  </ion-button>
+</div>
+  
+</ion-content>
